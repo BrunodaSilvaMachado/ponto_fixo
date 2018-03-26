@@ -14,25 +14,25 @@ Seja f:[a,b]→[a,b] uma função contração, i.e. uma função que satisfaça:
 Então, existe um único pont x^* pertencente ao intervalo [a,b] tal que f(x^*) = x^*. Além disso, para qualquer x_0 ∈ [a,b] , a sequência (x_n)_n dada por: x_{n+1} = f(x_n). n = 0,1,2,...,
 
 converge x^* quando n → ∞
-#Resultados
+# Resultados
 
 Através do algoritmo recursivo x_i = g(x_1) vamos calcular a solução da equação cos(x) - x = 0. Primeiramente reescrevendo a equação temos x = cos(x) para os valores iniciais x_0 = 1.5 com um passo de 1e-10 temos 
-![iteração do ponto fixo x_{n + 1} = cos(x_n) com valor inicial x_0 = 1.5](amostra_pf.pdf)
+![iteração do ponto fixo x_{n + 1} = cos(x_n) com valor inicial x_0 = 1.5](amostra_pf.png)
 
 veja no grafico, quando o metodo converge, a linha de convergencia em preto traça uma espiral passando por todos os pontos ate chegar no resultado
 
 para termos certeza vamos traçar o grafico do numero de iterções por pontos 
 
-![grafico da convergencia](convergencia_pf.pdf)
+![grafico da convergencia](convergencia_pf.png)
 Como podemos ver o grafica cai exponencialmente a cada iteração até alcancar a convergencia. Para ver como esse tipo de decaimento influencia vamos comparar este grafico com o seguinte exemplo: x_0 = 0.75 e passo 1e-10.
 
-![grafico comparativo](compConvergencia_pf.pdf)
+![grafico comparativo](compConvergencia_pf.png)
 Como podemos ver o ponto inicial x_0 = 0.75 converge mais rapido que o x_0 = 1.75 isso significa que quanto mais proximo da raiz mais rapido o algoritmo converge e quanto mais longe mais devagar ele converge ou ate mesmo pode divergir
 
 
-#Codigo
+# Codigo
 
-'''c
+``` c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -91,8 +91,8 @@ int main(int argc, char **argv)
     return 0;
 }
 
-'''
-#Referencias
+```
+# Referencias
 
 * github, Mastering Markdown disponivel em: https://guides.github.com/features/mastering-markdown/
 * A. Gilat e V. Subramaniam ,Métodos Numericos para Engenheiros e Cientistas, ed 2008
