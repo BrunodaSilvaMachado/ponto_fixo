@@ -1,5 +1,11 @@
 # ponto_fixo
 
+# Antes de começar...
+
+Nesse trabalho faço menção ao professor Thadeu Penna, @thadeupenna , por ter me ensinado e a usar o markdown que é um poderoso editor de texto simples, sem mais delongas espero que gostem da leitura.
+
+# O Metodo do Ponto fixo
+
 O método da iteração de ponto fixo é usado para resolver equações na forma f(x) = 0. O método é implementado rescrevendo a equação como:
 
                                                         >x = g(x)
@@ -19,15 +25,15 @@ converge x^* quando n → ∞
 Através do algoritmo recursivo x_i = g(x_1) vamos calcular a solução da equação cos(x) - x = 0. Primeiramente reescrevendo a equação temos x = cos(x) para os valores iniciais x_0 = 1.5 com um passo de 1e-10 temos 
 ![iteração do ponto fixo x_{n + 1} = cos(x_n) com valor inicial x_0 = 1.5](amostra_pf.png)
 
-veja no grafico, quando o metodo converge, a linha de convergencia em preto traça uma espiral passando por todos os pontos ate chegar no resultado
-
-para termos certeza vamos traçar o grafico do numero de iterções por pontos 
+veja no grafico, quando o metodo converge, a linha de convergencia em preto traça uma espiral passando por todos os pontos ate chegar no resultado,para termos certeza vamos traçar o grafico do numero de iterções por pontos 
 
 ![grafico da convergencia](convergencia_pf.png)
-Como podemos ver o grafica cai exponencialmente a cada iteração até alcancar a convergencia. Para ver como esse tipo de decaimento influencia vamos comparar este grafico com o seguinte exemplo: x_0 = 0.75 e passo 1e-10.
+
+Como podemos ver o grafica cai exponencialmente a cada iteração até alcancar a convergencia. Para ver como esse tipo de decaimento influencia vamos comparar este grafico com o seguinte exemplo: x_a = 0.75 e passo 1e-10 contra x_b = 1.50 e passo 1e-10. 
 
 ![grafico comparativo](compConvergencia_pf.png)
-Como podemos ver o ponto inicial x_0 = 0.75 converge mais rapido que o x_0 = 1.75 isso significa que quanto mais proximo da raiz mais rapido o algoritmo converge e quanto mais longe mais devagar ele converge ou ate mesmo pode divergir
+
+Como podemos ver o ponto inicial x_a = 0.75 converge mais rapido que o x_b = 1.50 isso significa que quanto mais proximo da raiz mais rapido o algoritmo converge e quanto mais longe mais devagar ele converge ou ate mesmo pode divergir
 
 
 # Codigo
