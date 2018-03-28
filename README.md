@@ -25,9 +25,11 @@ converge x^* quando n → ∞
 Através do algoritmo recursivo x_i = g(x_1) vamos calcular a solução da equação cos(x) - x = 0. Primeiramente reescrevendo a equação temos x = cos(x) para os valores iniciais x_0 = 1.5 com um passo de 1e-10 temos 
 ![iteração do ponto fixo x_{n + 1} = cos(x_n) com valor inicial x_0 = 1.5](amostra_pf.png)
 
-veja no grafico, quando o metodo converge, os valores obtidos são iterações sucessivas que concentram -se progressivamente em direção a solucão procurada. A linha de convergencia em preto traça uma espiral passando por todos os pontos ate chegar no resultado,para termos certeza vamos traçar o grafico do numero de iterções por pontos 
+Veja no grafico, quando o metodo converge, os valores obtidos são iterações sucessivas que concentram -se progressivamente em direção a solucão procurada. A linha de convergencia em preto traça uma espiral passando por todos os pontos ate chegar no resultado,para termos certeza vamos traçar o grafico do numero de iterções por pontos 
 
 ![grafico da convergencia](convergencia_pf.png)
+
+![grafico da convergencia log-log](convergencia_pf_log.png)
 
 Como podemos ver através da linha pontilhada o grafico apresenta uma tendencia a decair exponencialmente a cada iteração até alcancar a convergencia,(esse tipo de decaimento é normalmente visto em um oscilador harmonico amortecido, mas não se engane **não é possivel** modelar, "fit", os dados usando a equação do oscilador amortercido.). Para ver como esse tipo de decaimento influencia vamos comparar este grafico com o seguinte exemplo: x_a = 0.75 e passo 1e-10 contra x_b = 1.50 e passo 1e-10. 
 
