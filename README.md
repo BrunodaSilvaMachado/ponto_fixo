@@ -29,7 +29,7 @@ veja no grafico, quando o metodo converge, os valores obtidos são iterações s
 
 ![grafico da convergencia](convergencia_pf.png)
 
-Como podemos ver o grafica cai exponencialmente a cada iteração até alcancar a convergencia. Para ver como esse tipo de decaimento influencia vamos comparar este grafico com o seguinte exemplo: x_a = 0.75 e passo 1e-10 contra x_b = 1.50 e passo 1e-10. 
+Como podemos ver através da linha pontilhada o grafico apresenta uma tendencia a decair exponencialmente a cada iteração até alcancar a convergencia,(esse tipo de decaimento é normalmente visto em um oscilador harmonico amortecido, mas não se engane **não é possivel** modelar, "fit", os dados usando a equação do oscilador amortercido.). Para ver como esse tipo de decaimento influencia vamos comparar este grafico com o seguinte exemplo: x_a = 0.75 e passo 1e-10 contra x_b = 1.50 e passo 1e-10. 
 
 ![grafico comparativo](compConvergencia_pf.png)
 
