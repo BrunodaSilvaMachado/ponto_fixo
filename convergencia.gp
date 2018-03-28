@@ -17,4 +17,4 @@ fit g(x) 'limInf_convergencia_1.5_1e-010.dat' via d,e,h
 plot 'convergencia_1.5_1e-010.dat' pt 7 ps 0.3 lc 7 t 'convergencia', 'convergencia_1.5_1e-010.dat' t'' w l lw 1, f(x) lt 0 lc 10 t 'decaimento', g(x) t '' lt 0 lc 10
 
 unset output
-set terminal wxt
+unset terminal
