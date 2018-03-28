@@ -25,7 +25,7 @@ converge x^* quando n → ∞
 Através do algoritmo recursivo x_i = g(x_1) vamos calcular a solução da equação cos(x) - x = 0. Primeiramente reescrevendo a equação temos x = cos(x) para os valores iniciais x_0 = 1.5 com um passo de 1e-10 temos 
 ![iteração do ponto fixo x_{n + 1} = cos(x_n) com valor inicial x_0 = 1.5](amostra_pf.png)
 
-veja no grafico, quando o metodo converge, a linha de convergencia em preto traça uma espiral passando por todos os pontos ate chegar no resultado,para termos certeza vamos traçar o grafico do numero de iterções por pontos 
+veja no grafico, quando o metodo converge, os valores obtidos são iterações sucessivas que concentram -se progressivamente em direção a solucão procurada. A linha de convergencia em preto traça uma espiral passando por todos os pontos ate chegar no resultado,para termos certeza vamos traçar o grafico do numero de iterções por pontos 
 
 ![grafico da convergencia](convergencia_pf.png)
 
@@ -33,7 +33,9 @@ Como podemos ver o grafica cai exponencialmente a cada iteração até alcancar 
 
 ![grafico comparativo](compConvergencia_pf.png)
 
-Como podemos ver o ponto inicial x_a = 0.75 converge mais rapido que o x_b = 1.50 isso significa que quanto mais proximo da raiz mais rapido o algoritmo converge e quanto mais longe mais devagar ele converge ou ate mesmo pode divergir
+Como podemos ver o ponto inicial x_a = 0.75 converge mais rapido que o x_b = 1.50 isso significa que quanto mais proximo da raiz mais rapido o algoritmo converge e quanto mais longe mais devagar ele converge ou ate mesmo pode divergir assim podemos concluir que a diferença das aproximações iniciais causaram diferença no número de iterações.
+
+
 
 
 # Codigo
